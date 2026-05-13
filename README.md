@@ -1,6 +1,6 @@
 # Deep-ML Practice Solutions
 
-This repository contains my personal solutions to selected machine learning practice problems from Deep-ML. I use this repo to keep track of my learning progress, practice implementing algorithms from scratch, and share my own approaches for reference.
+This repository contains my personal solutions to selected machine learning practice problems from Deep-ML website. I use this repo to keep track of my learning progress, practice implementing algorithms from scratch, and share my own approaches for reference.
 
 ## About
 
