@@ -13,6 +13,10 @@ machine-learning/
   easy/
   medium/
   hard/
+deep-learning/
+  easy/
+  medium/
+  hard/
 ```
 
 Each solution file includes a short summary, the main idea, key steps, complexity notes, and my Python implementation.
@@ -27,6 +31,8 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - One-Hot Encoding
 - Accuracy Score
 - Clustering
+- He Initialization
+- Neural Networks
 - NumPy vectorization
 
 ## Progress
@@ -36,6 +42,9 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Easy | 6 |
 | Machine Learning | Medium | 2 |
 | Machine Learning | Hard | 0 |
+| Deep Learning | Easy | 0 |
+| Deep Learning | Medium | 1 |
+| Deep Learning | Hard | 0 |
 
 ## Notes
 
