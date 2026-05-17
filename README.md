@@ -34,6 +34,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - He Initialization
 - Masked Self-Attention
 - Neural Networks
+- QK-Norm
 - Self-Attention
 - NumPy vectorization
 
@@ -45,7 +46,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Medium | 2 |
 | Machine Learning | Hard | 0 |
 | Deep Learning | Easy | 0 |
-| Deep Learning | Medium | 3 |
+| Deep Learning | Medium | 4 |
 | Deep Learning | Hard | 0 |
 
 ## Notes
