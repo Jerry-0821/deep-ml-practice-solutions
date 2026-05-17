@@ -32,6 +32,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - Accuracy Score
 - Clustering
 - He Initialization
+- Masked Self-Attention
 - Neural Networks
 - NumPy vectorization
 
@@ -43,7 +44,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Medium | 2 |
 | Machine Learning | Hard | 0 |
 | Deep Learning | Easy | 0 |
-| Deep Learning | Medium | 1 |
+| Deep Learning | Medium | 2 |
 | Deep Learning | Hard | 0 |
 
 ## Notes
