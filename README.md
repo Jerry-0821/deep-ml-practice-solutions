@@ -27,6 +27,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - Gradient Descent
 - Mini-Batch Gradient Descent
 - Stochastic Gradient Descent
+- Numerical Gradient Checking
 - Feature Scaling
 - Dataset Shuffling
 - Polynomial Features
@@ -46,7 +47,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Category | Difficulty | Number of Solutions |
 | --- | --- | ---: |
 | Machine Learning | Easy | 6 |
-| Machine Learning | Medium | 4 |
+| Machine Learning | Medium | 5 |
 | Machine Learning | Hard | 0 |
 | Deep Learning | Easy | 0 |
 | Deep Learning | Medium | 5 |
