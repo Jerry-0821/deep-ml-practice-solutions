@@ -33,6 +33,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - One-Hot Encoding
 - Accuracy Score
 - Clustering
+- Gated Attention
 - He Initialization
 - Masked Self-Attention
 - Neural Networks
@@ -48,7 +49,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Medium | 4 |
 | Machine Learning | Hard | 0 |
 | Deep Learning | Easy | 0 |
-| Deep Learning | Medium | 4 |
+| Deep Learning | Medium | 5 |
 | Deep Learning | Hard | 0 |
 
 ## Notes
