@@ -21,6 +21,8 @@ deep-learning/
 
 Each solution file includes a short summary, the main idea, key steps, complexity notes, and my Python implementation.
 
+For a full list of uploaded solutions, see [SOLUTION_INDEX.md](SOLUTION_INDEX.md).
+
 ## Topics Covered
 
 - Linear Regression
