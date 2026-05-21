@@ -35,6 +35,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - Accuracy Score
 - Clustering
 - Gated Attention
+- Hard Sigmoid
 - He Initialization
 - Masked Self-Attention
 - Neural Networks
@@ -50,7 +51,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Easy | 6 |
 | Machine Learning | Medium | 5 |
 | Machine Learning | Hard | 0 |
-| Deep Learning | Easy | 2 |
+| Deep Learning | Easy | 3 |
 | Deep Learning | Medium | 5 |
 | Deep Learning | Hard | 0 |
 
