@@ -41,6 +41,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - Neural Networks
 - QK-Norm
 - Self-Attention
+- SELU
 - Square ReLU
 - NumPy vectorization
 
@@ -51,7 +52,7 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 | Machine Learning | Easy | 6 |
 | Machine Learning | Medium | 5 |
 | Machine Learning | Hard | 0 |
-| Deep Learning | Easy | 3 |
+| Deep Learning | Easy | 4 |
 | Deep Learning | Medium | 5 |
 | Deep Learning | Hard | 0 |
 
