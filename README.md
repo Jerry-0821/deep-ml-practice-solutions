@@ -34,26 +34,50 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - One-Hot Encoding
 - Accuracy Score
 - Clustering
+- Adam Optimizer
+- Batch Normalization
+- Binary Cross-Entropy
+- Classification Metrics
+- Confusion Matrix
+- Decision Trees
+- Dropout
+- ELU
+- Entropy
+- Exponential Learning Rate
 - Gated Attention
+- Gini Impurity
 - Hard Sigmoid
 - He Initialization
+- Kernel Methods
+- Leaky ReLU
+- Log Softmax
+- Logistic Regression
 - Masked Self-Attention
+- Mean Absolute Error
 - Neural Networks
+- PReLU
 - QK-Norm
+- ReLU
+- Regression Metrics
+- Recurrent Neural Networks
+- Ridge Regression
 - Self-Attention
 - SELU
+- Sigmoid
+- Softmax
 - Square ReLU
+- Tanh
 - NumPy vectorization
 
 ## Progress
 
 | Category | Difficulty | Number of Solutions |
 | --- | --- | ---: |
-| Machine Learning | Easy | 6 |
+| Machine Learning | Easy | 22 |
 | Machine Learning | Medium | 5 |
 | Machine Learning | Hard | 0 |
-| Deep Learning | Easy | 4 |
-| Deep Learning | Medium | 5 |
+| Deep Learning | Easy | 12 |
+| Deep Learning | Medium | 11 |
 | Deep Learning | Hard | 0 |
 
 ## Notes
