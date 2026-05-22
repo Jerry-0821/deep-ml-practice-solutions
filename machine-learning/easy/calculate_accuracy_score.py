@@ -24,7 +24,7 @@ import numpy as np
 
 def accuracy_score(y_true, y_pred):
     correct = y_true == y_pred
-    # TODO: Empty y_true would cause division by zero.
+    # Empty y_true would cause division by zero.
     auc = np.sum(correct) / len(y_true)
 
     return auc

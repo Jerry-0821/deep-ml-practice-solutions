@@ -43,7 +43,7 @@ def he_initialization(n_in: int, n_out: int, mode: str = 'fan_in', distribution:
     else:
         fan = n_out
 
-    # TODO: Invalid mode values currently fall back to fan_out; zero fan would cause division by zero.
+    # Invalid mode values currently fall back to fan_out; zero fan would cause division by zero.
     if distribution == "normal":
         std = np.sqrt(2 / fan)
         return np.random.randn(n_in, n_out) * std
@@ -51,4 +51,4 @@ def he_initialization(n_in: int, n_out: int, mode: str = 'fan_in', distribution:
         bound = np.sqrt(6 / fan)
         return np.random.uniform(-bound, bound, size=(n_in, n_out))
 
-    # TODO: Invalid distribution values return None implicitly in the original simple implementation.
+    # Invalid distribution values return None implicitly in the original simple implementation.

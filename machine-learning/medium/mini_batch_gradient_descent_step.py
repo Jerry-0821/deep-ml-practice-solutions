@@ -31,7 +31,7 @@ def mini_batch_gd_step(X: np.ndarray, y: np.ndarray, weights: np.ndarray, bias: 
     y_b = y[batch_indices]
     m = len(batch_indices)
 
-    # TODO: An empty batch would cause division by zero.
+    # An empty batch would cause division by zero.
     e = np.dot(X_b, weights) + bias - y_b
     L_b = 2 / m * np.dot(X_b.T, e)
     dL_b = 2 / m * np.sum(e)

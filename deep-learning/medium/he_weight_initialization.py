@@ -49,7 +49,7 @@ def he_initialize(layer_dims: list, method: str = 'normal', seed: int = 42) -> l
             limit = np.sqrt(6 / fan_in)
             W = np.random.uniform(low=-limit, high=limit, size=shape)
 
-        # TODO: Invalid methods or zero fan-in would fail; keep behavior simple for this practice solution.
+        # Invalid methods or zero fan-in would fail; keep behavior simple for this practice solution.
         weights.append(W)
 
     return weights

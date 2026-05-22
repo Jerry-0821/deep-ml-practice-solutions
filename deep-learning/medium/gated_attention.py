@@ -57,7 +57,7 @@ def gated_attention(
 
     # The sigmoid gate is query-dependent because it is computed from X.
     z = np.dot(X, W_g)
-    # TODO: Very large positive or negative z values can overflow np.exp in the sigmoid.
+    # Very large positive or negative z values can overflow np.exp in the sigmoid.
     G = 1 / (1 + np.exp(-z))
     Y_gated = G * Y
 

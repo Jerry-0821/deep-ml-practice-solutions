@@ -31,7 +31,7 @@ def sgd_update(X: np.ndarray, y: np.ndarray, weights: np.ndarray, learning_rate:
     """
     n = len(X)
 
-    # TODO: Empty X would cause modulo by zero.
+    # Empty X would cause modulo by zero.
     for t in range(n_iter):
         i = t % n
         X_i = X[i]

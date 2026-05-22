@@ -26,7 +26,7 @@ def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> l
     x = np.array(X)
     y = np.array(y)
 
-    # TODO: If X.T @ X is singular, np.linalg.inv will raise an error.
+    # If X.T @ X is singular, np.linalg.inv will raise an error.
     theta = np.linalg.inv(x.T @ x) @ x.T @ y
 
     # Formatting before float conversion preserves four-decimal rounding, including -0.0.

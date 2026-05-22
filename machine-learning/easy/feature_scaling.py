@@ -25,13 +25,13 @@ import numpy as np
 def feature_scaling(data: np.ndarray) -> (np.ndarray, np.ndarray):
     mean = data.mean(axis=0)
     std = data.std(axis=0)
-    # TODO: Constant columns have std == 0, which can cause division by zero.
+    # Constant columns have std == 0, which can cause division by zero.
     z = (data - mean) / std
     standardized_data = np.round(z, 4)
 
     x_min = data.min(axis=0)
     x_max = data.max(axis=0)
-    # TODO: Constant columns have x_max == x_min, which can cause division by zero.
+    # Constant columns have x_max == x_min, which can cause division by zero.
     min_max = (data - x_min) / (x_max - x_min)
     normalized_data = np.round(min_max, 4)
 

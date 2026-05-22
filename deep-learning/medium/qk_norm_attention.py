@@ -40,7 +40,7 @@ def qk_norm_attention(Q: np.ndarray, K: np.ndarray, V: np.ndarray, temperature: 
     Q_norm = Q / (np.linalg.norm(Q, axis=1, keepdims=True) + 1e-8)
     K_norm = K / (np.linalg.norm(K, axis=1, keepdims=True) + 1e-8)
 
-    # TODO: temperature=0 would cause division by zero; keep behavior simple for this practice solution.
+    # temperature=0 would cause division by zero; keep behavior simple for this practice solution.
     scores = np.dot(Q_norm, K_norm.T) / temperature
 
     # Subtract the row-wise maximum before exponentiation for numerical stability.

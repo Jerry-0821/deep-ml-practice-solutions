@@ -67,17 +67,29 @@ Each solution file includes a short summary, the main idea, key steps, complexit
 - Softmax
 - Square ReLU
 - Tanh
+- Dynamic Tanh activation
+- Ensemble methods
+- GRU recurrent neural networks
+- LSTM recurrent neural networks
+- Machine learning implementation
+- Mixed precision training
+- Optimization
+- Activation functions
+- Classification metrics
+- Cross-entropy loss
+- GeLU activation
+- Normalization
 - NumPy vectorization
 
 ## Progress
 
 | Category | Difficulty | Number of Solutions |
 | --- | --- | ---: |
-| Machine Learning | Easy | 22 |
-| Machine Learning | Medium | 5 |
+| Machine Learning | Easy | 34 |
+| Machine Learning | Medium | 23 |
 | Machine Learning | Hard | 0 |
-| Deep Learning | Easy | 12 |
-| Deep Learning | Medium | 11 |
+| Deep Learning | Easy | 19 |
+| Deep Learning | Medium | 13 |
 | Deep Learning | Hard | 0 |
 
 ## Notes

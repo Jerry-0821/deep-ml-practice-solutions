@@ -24,7 +24,7 @@ import numpy as np
 
 def to_categorical(x, n_col=None):
     if n_col is None:
-        # TODO: Empty input will make np.max fail.
+        # Empty input will make np.max fail.
         n_col = np.max(x) + 1
 
     one_hot = np.zeros((x.shape[0], n_col))
