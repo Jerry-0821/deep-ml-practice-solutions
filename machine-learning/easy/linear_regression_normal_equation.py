@@ -20,14 +20,10 @@ Space: O(n * d) for the input matrix representation.
 """
 
 import numpy as np
-
-
 def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> list[float]:
     x = np.array(X)
     y = np.array(y)
 
-    # If X.T @ X is singular, np.linalg.inv will raise an error.
-    theta = np.linalg.inv(x.T @ x) @ x.T @ y
+    theta = (np.linalg.inv(x.T @ x)@ x.T @ y)
 
-    # Formatting before float conversion preserves four-decimal rounding, including -0.0.
     return [float(f"{i:.4f}") for i in theta]

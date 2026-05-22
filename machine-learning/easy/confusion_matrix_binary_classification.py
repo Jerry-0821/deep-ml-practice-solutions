@@ -19,10 +19,12 @@ Time: O(n)
 Space: O(1)
 """
 
+from collections import Counter
 
 def confusion_matrix(data):
-    TP, FN, FP, TN = 0, 0, 0, 0
-
+    # Implement the function here
+    #[y_true, y_pred]
+    TP, FN, FP, TN = 0, 0 , 0, 0
     for y_true, y_pred in data:
         if y_true == 1 and y_pred == 1:
             TP += 1
@@ -32,5 +34,4 @@ def confusion_matrix(data):
             FP += 1
         else:
             TN += 1
-
     return [[TP, FN], [FP, TN]]

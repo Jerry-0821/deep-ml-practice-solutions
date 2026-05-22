@@ -21,19 +21,26 @@ Space: O(1)
 
 import math
 
+def binary_cross_entropy(y_true: list[float], y_pred: list[float], epsilon: float = 1e-15) -> float:
+    """
+    Compute binary cross-entropy loss.
 
-def binary_cross_entropy(
-    y_true: list[float],
-    y_pred: list[float],
-    epsilon: float = 1e-15,
-) -> float:
+    Args:
+        y_true: True binary labels (0 or 1)
+        y_pred: Predicted probabilities (between 0 and 1)
+        epsilon: Small value for numerical stability
+
+    Returns:
+        Mean binary cross-entropy loss
+    """
     n = len(y_true)
     total = 0.0
-
     for y, p in zip(y_true, y_pred):
-        # Keep log inputs numerically safe.
+        # p cannot 1 or 0
+        # p cannot be 0
         if p < epsilon:
             p = epsilon
+        # p cannot be 1, can 0.999999
         elif p > 1 - epsilon:
             p = 1 - epsilon
 

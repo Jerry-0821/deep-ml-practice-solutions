@@ -22,25 +22,22 @@ Space: O(n * c) for the expanded feature matrix.
 import numpy as np
 from itertools import combinations_with_replacement
 
-
 def polynomial_features(X, degree):
+
     n_sample, n_feature = X.shape
     result = []
 
     for i in range(n_sample):
-        row = X[i]
+        row  = X[i]
         feature = []
-
         for d in range(degree + 1):
-            # d=0 gives the bias term through the empty combination, whose product is 1.0.
             for comb in combinations_with_replacement(range(n_feature), d):
-                val = 1.0
 
+                val = 1.0
                 for idx in comb:
                     val *= row[idx]
 
                 feature.append(val)
-
         feature.sort()
         result.append(feature)
 

@@ -21,9 +21,9 @@ Space: O(1)
 
 import numpy as np
 
-
 def r_squared(y_true, y_pred):
-    SSR = np.sum((y_true - y_pred) ** 2)
-    SST = np.sum((y_true - y_true.mean()) ** 2)
-    R2 = 1 - (SSR / SST)
+    # Write your code here
+    SSR = np.sum((y_true - y_pred) **2)
+    SST = np.sum((y_true - y_true.mean()) **2)
+    R2 = 1 - (SSR/SST)
     return R2

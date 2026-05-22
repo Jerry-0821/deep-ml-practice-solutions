@@ -21,7 +21,6 @@ Space: O(m + D) for the batch errors and gradients.
 
 import numpy as np
 
-
 def mini_batch_gd_step(X: np.ndarray, y: np.ndarray, weights: np.ndarray, bias: float, batch_indices: list, lr: float) -> np.ndarray:
     """
     Perform one mini-batch gradient descent update step for linear regression with MSE loss.
@@ -31,13 +30,12 @@ def mini_batch_gd_step(X: np.ndarray, y: np.ndarray, weights: np.ndarray, bias: 
     y_b = y[batch_indices]
     m = len(batch_indices)
 
-    # An empty batch would cause division by zero.
     e = np.dot(X_b, weights) + bias - y_b
-    L_b = 2 / m * np.dot(X_b.T, e)
-    dL_b = 2 / m * np.sum(e)
+    L_b = 2/m * np.dot(X_b.T, e)
+    dL_b = 2/m * np.sum(e)
 
-    # Update weights and bias using only the selected mini-batch.
+    #update
     weights -= lr * L_b
-    bias -= lr * dL_b
+    bias -= lr *dL_b
 
     return np.append(weights, bias)

@@ -21,17 +21,15 @@ Space: O(n) for returned values or intermediate arrays.
 import numpy as np
 from typing import Tuple
 
-
 def find_best_split(X: np.ndarray, y: np.ndarray) -> Tuple[int, float]:
     """Return the (feature_index, threshold) that minimises weighted Gini impurity."""
     n, d = X.shape
     best_feat, best_thresh, best_gini = 0, float("inf"), float("inf")
-
     def gini_index(labels):
         if len(labels) == 0:
             return 0.0
         p = np.mean(labels)
-        gini = 1 - (p**2 + (1 - p) ** 2)
+        gini = 1 - (p **2 + (1 - p) ** 2)
         return gini
 
     for feat in range(d):

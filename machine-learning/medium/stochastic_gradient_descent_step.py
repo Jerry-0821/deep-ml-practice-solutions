@@ -21,7 +21,6 @@ Space: O(D) for the current sample and weight update.
 
 import numpy as np
 
-
 def sgd_update(X: np.ndarray, y: np.ndarray, weights: np.ndarray, learning_rate: float, n_iter: int) -> list:
     """
     Perform n_iter steps of stochastic gradient descent on a linear regression
@@ -31,7 +30,6 @@ def sgd_update(X: np.ndarray, y: np.ndarray, weights: np.ndarray, learning_rate:
     """
     n = len(X)
 
-    # Empty X would cause modulo by zero.
     for t in range(n_iter):
         i = t % n
         X_i = X[i]
@@ -39,6 +37,6 @@ def sgd_update(X: np.ndarray, y: np.ndarray, weights: np.ndarray, learning_rate:
 
         y_hat = np.dot(X_i.T, weights)
         L = y_hat - y_i
-        weights = weights - 2 * learning_rate * L * X_i
+        weights = weights - 2 * learning_rate * (L) * X_i
 
     return weights.tolist()

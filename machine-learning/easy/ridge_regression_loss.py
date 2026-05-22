@@ -20,16 +20,11 @@ Space: O(n)
 
 import numpy as np
 
-
-def ridge_loss(
-    X: np.ndarray,
-    w: np.ndarray,
-    y_true: np.ndarray,
-    alpha: float,
-) -> float:
+def ridge_loss(X: np.ndarray, w: np.ndarray, y_true: np.ndarray, alpha: float) -> float:
+    # shape shows [4,2], we get 4 as the n
     n = X.shape[0]
 
     y_pred = X @ w
-    mse = np.sum((y_pred - y_true) ** 2) / n
-    loss = mse + alpha * np.sum(w ** 2)
+    mse = np.sum((y_pred - y_true)**2) / n
+    loss = mse + alpha * (np.sum(w ** 2))
     return loss

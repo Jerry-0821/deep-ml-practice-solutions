@@ -21,8 +21,8 @@ Space: O(1)
 
 import numpy as np
 
-
 def rmse(y_true, y_pred):
+    # Write your code here
     if not isinstance(y_true, np.ndarray) or not isinstance(y_pred, np.ndarray):
         raise ValueError("Inputs must be numpy arrays.")
 
@@ -35,4 +35,4 @@ def rmse(y_true, y_pred):
     MSE = np.mean((y_true - y_pred) ** 2)
     rmse_res = float(np.sqrt(MSE))
 
-    return round(rmse_res, 3)
+    return round(rmse_res,3)

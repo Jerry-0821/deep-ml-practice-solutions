@@ -20,19 +20,21 @@ Space: O(1)
 
 import numpy as np
 
-
 def f_score(y_true, y_pred, beta):
-    tp = np.sum((y_pred == 1) & (y_true == 1))
-    fp = np.sum((y_pred == 1) & (y_true == 0))
-    fn = np.sum((y_pred == 0) & (y_true == 1))
+    """
+    Calculate F-Score for a binary classification task.
 
-    precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
-    recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    :param y_true: Numpy array of true labels
+    :param y_pred: Numpy array of predicted labels
+    :param beta: The weight of precision in the harmonic mean
+    :return: F-Score rounded to three decimal places
+    """
+    TP = np.sum((y_pred == 1) & (y_true == 1))
+    FP = np.sum((y_pred == 1) & (y_true == 0))
+    FN = np.sum((y_pred == 0) & (y_true == 1))
 
-    if precision + recall == 0:
-        return 0.0
+    precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
+    recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
 
-    f_score = ((1 + (beta ** 2)) * (precision * recall)) / (
-        ((beta ** 2) * precision) + recall
-    )
+    f_score = ((1+(beta**2)) * (precision * recall)) / ((beta **2 * precision) + recall)
     return round(f_score, 3)

@@ -18,13 +18,19 @@ Time: O(n)
 Space: O(k)
 """
 
+import numpy as np
 
 def gini_impurity(y):
+    """
+    Calculate Gini Impurity for a list of class labels.
+
+    :param y: List of class labels
+    :return: Gini Impurity rounded to three decimal places
+    """
     n = len(y)
     gini = 1.0
-
     for cls in set(y):
         p = y.count(cls) / n
-        gini -= p ** 2
+        gini -= p **2
 
-    return round(gini, 3)
+    return round(gini,3)
